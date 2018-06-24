@@ -28,6 +28,7 @@
             padding: 0;
 
         }
+        /*清空*/
         span,p{
             background: aqua;
         }
@@ -36,6 +37,14 @@
         }
         span,.text2{
             font-size: 20px;
+        }
+        /*群组选择器*/
+        #box .t1{
+            color:rebeccapurple;
+            /*包含选择器*/
+        }
+        div>ul{
+            color:red;
         }
     </style>
     <!-- 导入 -->
@@ -60,7 +69,23 @@
     <span class="text1">我是一句</span>
     <p class="text2">我是一段</p><br/>
 
+    <em class="t1">我是倾斜标签</em>
+    <div id="box">
+        <i class="t1">我也是倾斜标签</i>
+    </div><br/>
+    <ul>
+        <li>你</li>
+        <li>我</li>
+        <li>他</li>
+    </ul>
 
+    <div>
+        <ul>
+            <li>you</li>
+            <li>me</li>
+            <li>it</li>
+        </ul>
+    </div>
 
 </body>
 </html>
